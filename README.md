@@ -1,3 +1,7 @@
+<img width="1500" height="500" alt="www tarmoq org" src="https://github.com/user-attachments/assets/5a655897-34e1-4eb6-b4f7-823a558820f1" />
+
+
+
 ## Telegram messenger for Android
 
 [Telegram](https://telegram.org) is a messaging app with a focus on speed and security. It’s superfast, simple and free.
