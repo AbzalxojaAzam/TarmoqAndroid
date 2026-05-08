@@ -2456,14 +2456,14 @@ public class ImageLoader {
                     try {
                         if (ApplicationLoader.applicationContext.getExternalMediaDirs().length > 0) {
                             publicMediaDir = getPublicStorageDir();
-                            publicMediaDir = new File(publicMediaDir, "Telegram");
+                            publicMediaDir = new File(publicMediaDir, "Tarmoq");
                             publicMediaDir.mkdirs();
                         }
                     } catch (Exception e) {
                         FileLog.e(e);
                     }
                     newPath = ApplicationLoader.applicationContext.getExternalFilesDir(null);
-                    telegramPath = new File(newPath, "Telegram");
+                    telegramPath = new File(newPath, "Tarmoq");
                 } else {
                     boolean isSdCard = !TextUtils.isEmpty(SharedConfig.storageCacheDir) && path.getAbsolutePath().startsWith(SharedConfig.storageCacheDir);
                     if (!isSdCard) {
@@ -2472,7 +2472,7 @@ public class ImageLoader {
                             path = ApplicationLoader.applicationContext.getExternalFilesDir(null);
                         }
                     }
-                    telegramPath = new File(path, "Telegram");
+                    telegramPath = new File(path, "Tarmoq");
                 }
                 telegramPath.mkdirs();
 
@@ -2482,7 +2482,7 @@ public class ImageLoader {
                         File dir = dirs.get(a);
                         if (dir != null && !TextUtils.isEmpty(SharedConfig.storageCacheDir) && dir.getAbsolutePath().startsWith(SharedConfig.storageCacheDir)) {
                             path = dir;
-                            telegramPath = new File(path, "Telegram");
+                            telegramPath = new File(path, "Tarmoq");
                             telegramPath.mkdirs();
                             break;
                         }

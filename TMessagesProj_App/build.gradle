@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
 
+
+
 repositories {
     mavenCentral()
     google()
@@ -57,12 +59,13 @@ android {
         }
     }
 
+
+
     buildTypes {
         debug {
             debuggable true
             jniDebuggable true
             signingConfig signingConfigs.debug
-            applicationIdSuffix ".beta"
             minifyEnabled false
             shrinkResources false
             multiDexEnabled true
@@ -74,7 +77,6 @@ android {
             debuggable false
             jniDebuggable false
             signingConfig signingConfigs.release
-            applicationIdSuffix ".web"
             minifyEnabled true
             shrinkResources false
             multiDexEnabled true

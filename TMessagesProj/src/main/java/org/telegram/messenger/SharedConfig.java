@@ -1570,7 +1570,7 @@ public class SharedConfig {
     public static void checkSaveToGalleryFiles() {
         Utilities.globalQueue.postRunnable(() -> {
             try {
-                File telegramPath = new File(Environment.getExternalStorageDirectory(), "Telegram");
+                File telegramPath = new File(Environment.getExternalStorageDirectory(), "Tarmoq");
                 File imagePath = new File(telegramPath, "Telegram Images");
                 imagePath.mkdir();
                 File videoPath = new File(telegramPath, "Telegram Video");
