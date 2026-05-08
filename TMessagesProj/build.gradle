@@ -215,8 +215,12 @@ android {
         }
     }
 
+    buildFeatures {
+        buildConfig = true
+    }
     namespace 'org.telegram.messenger'
 }
+
 
 
 def getProps(String propName) {
